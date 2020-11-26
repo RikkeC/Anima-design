@@ -11,3 +11,74 @@
  Tags:         light, dark, two-columns, right-sidebar, responsive-layout, accessibility-ready
  Text Domain:  twentytwentychild
 */
+
+
+body {}
+
+h1.entry-title {
+    display: none;
+}
+
+.singular .entry-header {
+    padding: 1rem 0;
+}
+
+.social-icons a {
+    background: #e73333 !important;
+    color: white !important;
+}
+
+.page-id-32 .site-logo img {
+    display: none;
+}
+
+.site-logo img {
+    max-height: 6rem;
+}
+
+.post-inner {
+    padding-top: 0;
+}
+
+a {
+    color: white;
+}
+
+
+/* Menu -------------------------------------- */
+
+#menu-item-71,
+#menu-item-72,
+#menu-item-73 {
+    margin: 2rem 0 0 1.6rem;
+    text-transform: uppercase;
+}
+
+.menu-item-74 {
+    background-color: #e73333;
+    padding: 1rem 4rem;
+    text-transform: uppercase;
+
+}
+
+.menu-item-74:hover {
+    background-color: black;
+    border: 3px solid #e73333;
+    text-decoration: none;
+}
+
+
+/* mediaquaries------------------------------ */
+
+@media (min-width: 700px) {
+    .singular .entry-header {
+        padding: none;
+    }
+
+}
+
+@media (min-width: 1000px) {
+    .header-inner {
+        padding: 2rem 0 1rem 0;
+    }
+}
