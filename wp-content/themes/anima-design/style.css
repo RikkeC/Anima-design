@@ -67,8 +67,20 @@ a {
     text-decoration: none;
 }
 
+/* Til toppen ------------------------------- */
+.to-the-top {
+    position: fixed;
+    bottom: 45px;
+    float: right;
+    left: 85%;
 
-/* mediaquaries------------------------------ */
+    width: 100%;
+
+
+}
+
+
+/* Media Quaries------------------------------ */
 
 @media (min-width: 700px) {
     .singular .entry-header {
