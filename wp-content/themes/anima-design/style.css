@@ -12,10 +12,44 @@
  Text Domain:  twentytwentychild
 */
 
+.overlay-header #site-header {
+    padding-bottom: 10px;
+}
 
-body {}
+.overlay-header #site-header:hover {
+    background: black;
+}
 
 h1.entry-title {
+    display: none;
+}
+
+.cover-header-inner {
+    background-image: url(Logo/Anima_logo_red_white.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 50%;
+    position: absolute;
+    left: 25%;
+    margin-bottom: 10rem;
+    animation: fadeIn ease 3s;
+}
+
+.to-the-content {
+    margin-top: 9rem;
+}
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+hr {
     display: none;
 }
 
@@ -40,9 +74,11 @@ h1.entry-title {
     padding-top: 0;
 }
 
-a {
-    color: white;
+header {
+    background: none;
 }
+
+
 
 
 /* Menu -------------------------------------- */
@@ -50,22 +86,27 @@ a {
 #menu-item-71,
 #menu-item-72,
 #menu-item-73 {
-    margin: 2rem 0 0 1.6rem;
+    margin: 2.5rem 0 0 1.6rem;
     text-transform: uppercase;
 }
 
 .menu-item-74 {
     background-color: #e73333;
-    padding: 1rem 4rem;
+    padding: 1.5rem 5rem;
     text-transform: uppercase;
-
 }
 
 .menu-item-74:hover {
-    background-color: black;
     border: 3px solid #e73333;
     text-decoration: none;
 }
+
+.modal-menu > li > a,
+.modal-menu > li > .ancestor-wrapper > a {
+    color: white;
+}
+
+
 
 /* Til toppen ------------------------------- */
 .to-the-top {
@@ -73,10 +114,7 @@ a {
     bottom: 45px;
     float: right;
     left: 85%;
-
     width: 100%;
-
-
 }
 
 
@@ -85,6 +123,10 @@ a {
 @media (min-width: 700px) {
     .singular .entry-header {
         padding: none;
+    }
+
+    .modal-menu .menu-item-74 li .ancestor-wrapper a {
+        font-size: 4rem !important;
     }
 
 }
