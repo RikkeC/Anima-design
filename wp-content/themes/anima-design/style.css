@@ -12,6 +12,9 @@
  Text Domain:  twentytwentychild
 */
 
+/* GENERALT --------------------------- */
+
+/* header */
 .overlay-header #site-header {
     padding-bottom: 10px;
 }
@@ -20,11 +23,49 @@
     background: black;
 }
 
-h1.entry-title {
+/* pil op*/
+.to-the-content {
+    margin-top: 9rem;
+}
+
+.to-the-top {
+    position: fixed;
+    bottom: 45px;
+    float: right;
+    left: 85%;
+    width: 100%;
+}
+
+.to-the-top:hover {
+    color: white;
+}
+
+/* skillert */
+hr {
     display: none;
 }
 
-.cover-header-inner {
+/* farver på SoMe iconer */
+.social-icons a {
+    background: #e73333 !important;
+    color: white !important;
+}
+
+/* logo størrelse */
+.site-logo img {
+    max-height: 6rem;
+}
+
+
+/* FORSIDE ----------------------------- */
+
+/* overskrift på forside fjernet */
+.page-id-32 h1.entry-title {
+    display: none;
+}
+
+/* logo på forsiden */
+.page-id-32 .cover-header-inner {
     background-image: url(Logo/Anima_logo_red_white.png);
     background-size: contain;
     background-repeat: no-repeat;
@@ -35,10 +76,7 @@ h1.entry-title {
     animation: fadeIn ease 3s;
 }
 
-.to-the-content {
-    margin-top: 9rem;
-}
-
+/* animation fade in */
 @keyframes fadeIn {
     0% {
         opacity: 0;
@@ -49,37 +87,39 @@ h1.entry-title {
     }
 }
 
-hr {
-    display: none;
-}
 
 .singular .entry-header {
     padding: 1rem 0;
 }
 
-.social-icons a {
-    background: #e73333 !important;
-    color: white !important;
-}
 
+/* logo i top hjørne fjernet */
 .page-id-32 .site-logo img {
     display: none;
 }
 
-.site-logo img {
-    max-height: 6rem;
-}
+
 
 .post-inner {
     padding-top: 0;
 }
 
-header {
-    background: none;
+
+.entry-content > *:first-child {
+    margin-top: 3rem;
 }
 
+body,
+.entry-title a,
+:root .has-primary-color {
+    color: black;
+}
 
-
+/* Knap på form */
+.fluentform .ff-btn {
+    border-radius: 0px !important;
+    color: white;
+}
 
 /* Menu -------------------------------------- */
 
@@ -108,25 +148,27 @@ header {
 
 
 
-/* Til toppen ------------------------------- */
-.to-the-top {
-    position: fixed;
-    bottom: 45px;
-    float: right;
-    left: 85%;
-    width: 100%;
+/* Media Quaries------------------------------ */
+@media (min-width: 480px) {
+
+    .wp-block-pullquote.alignleft,
+    .wp-block-pullquote.alignright,
+    .wp-block-cover-image.alignleft,
+    .wp-block-cover-image.alignright,
+    .wp-block-cover.alignleft,
+    .wp-block-cover.alignright,
+    .wp-block-embed.alignleft,
+    .wp-block-embed.alignright,
+    .wp-block-gallery.alignleft,
+    .wp-block-gallery.alignright {
+        max-width: none;
+    }
 }
 
-
-/* Media Quaries------------------------------ */
 
 @media (min-width: 700px) {
     .singular .entry-header {
         padding: none;
-    }
-
-    .modal-menu .menu-item-74 li .ancestor-wrapper a {
-        font-size: 4rem !important;
     }
 
 }
