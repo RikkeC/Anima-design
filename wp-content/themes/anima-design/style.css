@@ -13,6 +13,44 @@
 */
 
 /* GENERALT --------------------------- */
+/* Fonts */
+@font-face {
+    font-family: 'MagallanesCondBold_1';
+    src: url(fonts/MagallanesCondBold_1.otf)
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+.entry-content h1,
+.entry-content h2,
+.entry-content h3,
+.entry-content h4,
+.entry-content h5,
+.entry-content h6,
+.entry-content cite,
+.entry-content figcaption,
+.entry-content table,
+.entry-content address,
+.entry-content .wp-caption-text,
+.entry-content .wp-block-file {
+    font-family: magallanesCondBold_1, sans-serif;
+    font-style: normal;
+    font-weight: 700;
+}
+
+
+p,
+li,
+ul,
+label,
+.widget_text p {
+    font-family: proxima-nova, sans-serif;
+    font-style: normal;
+    font-weight: 400;
+}
 
 /* header */
 .overlay-header #site-header {
@@ -149,6 +187,11 @@ body,
 .modal-menu > li > a,
 .modal-menu > li > .ancestor-wrapper > a {
     color: white;
+}
+
+/* undermenu */
+.primary-menu ul {
+    width: 40rem;
 }
 
 /* Støt side --------------------------------- */
