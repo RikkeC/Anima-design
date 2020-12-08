@@ -37,7 +37,7 @@
 }
 
 .to-the-top:hover {
-    color: white;
+    color: #e73333;
 }
 
 /* skillert */
@@ -73,7 +73,7 @@ hr {
     position: absolute;
     left: 25%;
     margin-bottom: 10rem;
-    animation: fadeIn ease 3s;
+    animation: fadeIn ease 2s;
 }
 
 /* animation fade in */
@@ -121,6 +121,11 @@ body,
     color: white;
 }
 
+/* blog post billeder */
+.wp-block-themeisle-blocks-posts-grid .wp-block-themeisle-blocks-posts-grid-post-blog .wp-block-themeisle-blocks-posts-grid-post .wp-block-themeisle-blocks-posts-grid-post-image img {
+    border-radius: 0px !important;
+}
+
 /* Menu -------------------------------------- */
 
 #menu-item-71,
@@ -146,7 +151,19 @@ body,
     color: white;
 }
 
+/* Støt side --------------------------------- */
+.page-id-68 ul.primary-menu {
+    display: none;
+}
 
+.page-id-68 .entry-header {
+    display: none;
+}
+
+.ff-el-group img {
+    background-image: url(Logo/Anima_logo_red_white.png);
+    height: 2rem;
+}
 
 /* Media Quaries------------------------------ */
 @media (min-width: 480px) {
@@ -176,5 +193,16 @@ body,
 @media (min-width: 1000px) {
     .header-inner {
         padding: 2rem 0 1rem 0;
+    }
+}
+
+@media (min-width: 1220px) {
+    .entry-content > .alignfull {
+        margin-bottom: 0;
+        margin-top: 0;
+    }
+
+    .cover-header + .post-inner {
+        padding-top: 0;
     }
 }
