@@ -94,6 +94,11 @@ hr {
     max-height: 6rem;
 }
 
+.footer-top-visible .footer-nav-widgets-wrapper,
+.footer-top-hidden #site-footer {
+    margin: 0;
+}
+
 
 /* FORSIDE ----------------------------- */
 
@@ -195,17 +200,39 @@ body,
 }
 
 /* Støt side --------------------------------- */
-.page-id-68 ul.primary-menu {
+/* fjerner menu */
+.page-id-68 ul.primary-menu,
+.page-id-594 ul.primary-menu {
     display: none;
 }
 
-.page-id-68 .entry-header {
+.page-id-68 .entry-header,
+.page-id-594 .entry-header {
     display: none;
 }
 
 .ff-el-group img {
     background-image: url(Logo/Anima_logo_red_white.png);
     height: 2rem;
+}
+
+
+/* støtteform */
+.fluentform .ff-el-group.ff_list_buttons .ff-el-form-check:not(.ff-el-image-holder).ff_item_selected span {
+    background-color: #e73333 !important;
+    border-color: #e73333 !important;
+}
+
+.fluentform .ff-el-group.ff_list_buttons .ff-el-form-check:not(.ff-el-image-holder).ff_item_selected:first-child span {
+    border-left-color: #e73333 !important;
+}
+
+.fluentform .ff-el-group.ff_list_buttons .ff-el-form-check:not(.ff-el-image-holder) span:hover {
+    color: #e73333;
+}
+
+span {
+    color: #e73333;
 }
 
 /* Media Quaries------------------------------ */
