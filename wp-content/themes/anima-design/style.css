@@ -52,6 +52,17 @@ label,
     font-weight: 400;
 }
 
+
+h2,
+.heading-size-2 {
+    font-size: 4.5rem;
+}
+
+h4,
+.heading-size-4 {
+    font-size: 3rem;
+}
+
 /* header */
 .overlay-header #site-header {
     padding-bottom: 10px;
@@ -99,6 +110,25 @@ hr {
     margin: 0;
 }
 
+.wp-block-cover-image .wp-block-cover__inner-container,
+.wp-block-cover .wp-block-cover__inner-container {
+    color: black;
+}
+
+/* frem og tilbage knapper på blog post */
+.pagination-single {
+    margin-bottom: 3rem;
+}
+
+#wp-block-themeisle-blocks-advanced-column-8e0273b6,
+#wp-block-themeisle-blocks-advanced-column-f0aa90dd,
+#wp-block-themeisle-blocks-advanced-column-83c9294e {
+    padding: 0px !important;
+    margin: 0px !important;
+}
+
+
+
 
 /* FORSIDE ----------------------------- */
 
@@ -112,11 +142,11 @@ hr {
     background-image: url(Logo/Anima_logo_red_white.png);
     background-size: contain;
     background-repeat: no-repeat;
-    width: 50%;
+    width: 32rem;
     position: absolute;
-    left: 25%;
     margin-bottom: 10rem;
     animation: fadeIn ease 2s;
+    align-self: center;
 }
 
 /* animation fade in */
@@ -130,6 +160,33 @@ hr {
     }
 }
 
+#wp-block-themeisle-blocks-advanced-column-39c7d39d {
+    padding: 0;
+    margin: 0;
+}
+
+#wp-block-themeisle-blocks-button-2ad1ad9b .wp-block-button__link,
+#wp-block-themeisle-blocks-button-a7e2a4dc .wp-block-button__link,
+#wp-block-themeisle-blocks-button-fe6e4ea8 .wp-block-button__link,
+#wp-block-themeisle-blocks-button-69e69f6e .wp-block-button__link,
+#wp-block-themeisle-blocks-button-5a6e0f38 .wp-block-button__link,
+#wp-block-themeisle-blocks-button-53d3dcea .wp-block-button__link {
+    background: #e73333;
+    padding-left: 50px;
+    padding-right: 50px;
+}
+
+.wp-block-media-text.has-media-on-the-right {
+    margin: 0;
+}
+
+.alignfull {
+    margin: 0;
+}
+
+.wp-block-media-text.is-image-fill figure.wp-block-media-text__media {
+    min-height: 550px;
+}
 
 .singular .entry-header {
     padding: 1rem 0;
@@ -194,10 +251,16 @@ body,
     color: white;
 }
 
+.menu-modal-inner .menu-item-74 {
+    text-align: center;
+}
+
 /* undermenu */
 .primary-menu ul {
     width: 40rem;
 }
+
+
 
 /* Støt side --------------------------------- */
 /* fjerner menu */
@@ -228,12 +291,9 @@ body,
 }
 
 .fluentform .ff-el-group.ff_list_buttons .ff-el-form-check:not(.ff-el-image-holder) span:hover {
-    color: #e73333;
+    color: #e73333 !important;
 }
 
-span {
-    color: #e73333;
-}
 
 /* Media Quaries------------------------------ */
 @media (min-width: 480px) {
@@ -250,6 +310,11 @@ span {
     .wp-block-gallery.alignright {
         max-width: none;
     }
+
+    h1,
+    .heading-size-1 {
+        font-size: 5rem;
+    }
 }
 
 
@@ -258,11 +323,36 @@ span {
         padding: none;
     }
 
+    .page-id-32 .cover-header-inner {
+        width: 50rem;
+    }
+
+    #wp-block-themeisle-blocks-advanced-column-8e0273b6,
+    #wp-block-themeisle-blocks-advanced-column-f0aa90dd,
+    #wp-block-themeisle-blocks-advanced-column-83c9294e {
+        padding: 20px !important;
+        margin: 20px !important;
+    }
+
+    h1,
+    .heading-size-1 {
+        font-size: 6rem;
+    }
 }
+
 
 @media (min-width: 1000px) {
     .header-inner {
         padding: 2rem 0 1rem 0;
+    }
+
+    .page-id-32 .cover-header-inner {
+        width: 70rem;
+    }
+
+    h1,
+    .heading-size-1 {
+        font-size: 7rem;
     }
 }
 
@@ -274,5 +364,10 @@ span {
 
     .cover-header + .post-inner {
         padding-top: 0;
+    }
+
+    h1,
+    .heading-size-1 {
+        font-size: 8rem;
     }
 }
