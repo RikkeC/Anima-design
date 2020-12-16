@@ -15,8 +15,8 @@
 /* GENERALT --------------------------- */
 /* Fonts */
 @font-face {
-    font-family: 'MagallanesCondBold_1';
-    src: url(fonts/MagallanesCondBold_1.otf)
+    font-family: 'MagallanesCondExtraBold';
+    src: url(Fonts/magallanescondextrabold-webfont.woff)
 }
 
 h1,
@@ -24,6 +24,7 @@ h2,
 h3,
 h4,
 h5,
+h6,
 .entry-content h1,
 .entry-content h2,
 .entry-content h3,
@@ -36,7 +37,7 @@ h5,
 .entry-content address,
 .entry-content .wp-caption-text,
 .entry-content .wp-block-file {
-    font-family: magallanesCondBold_1, sans-serif;
+    font-family: MagallanesCondExtraBold, sans-serif;
     font-style: normal;
     font-weight: 700;
 }
@@ -52,10 +53,19 @@ label,
     font-weight: 400;
 }
 
+h1,
+.heading-size-1 {
+    font-size: 5rem;
+}
 
 h2,
 .heading-size-2 {
     font-size: 4.5rem;
+}
+
+h3,
+.heading-size-3 {
+    font-size: 4rem;
 }
 
 h4,
@@ -127,7 +137,9 @@ hr {
     margin: 0px !important;
 }
 
-
+.powered-by-wordpress a {
+    display: none;
+}
 
 
 /* FORSIDE ----------------------------- */
@@ -142,7 +154,7 @@ hr {
     background-image: url(Logo/Anima_logo_red_white.png);
     background-size: contain;
     background-repeat: no-repeat;
-    width: 32rem;
+    width: 40rem;
     position: absolute;
     margin-bottom: 10rem;
     animation: fadeIn ease 2s;
@@ -170,7 +182,9 @@ hr {
 #wp-block-themeisle-blocks-button-fe6e4ea8 .wp-block-button__link,
 #wp-block-themeisle-blocks-button-69e69f6e .wp-block-button__link,
 #wp-block-themeisle-blocks-button-5a6e0f38 .wp-block-button__link,
-#wp-block-themeisle-blocks-button-53d3dcea .wp-block-button__link {
+#wp-block-themeisle-blocks-button-53d3dcea .wp-block-button__link,
+#wp-block-themeisle-blocks-button-cfd28c54 .wp-block-button__link,
+#wp-block-themeisle-blocks-button-cdf3864d .wp-block-button__link {
     background: #e73333;
     padding-left: 50px;
     padding-right: 50px;
@@ -219,6 +233,7 @@ body,
 .fluentform .ff-btn {
     border-radius: 0px !important;
     color: white;
+    background-color: #e73333;
 }
 
 /* blog post billeder */
@@ -260,6 +275,11 @@ body,
     width: 40rem;
 }
 
+/* pil i menu */
+.primary-menu > li > .icon {
+    right: -0.5rem;
+    top: calc(50% - 1rem);
+}
 
 
 /* Støt side --------------------------------- */
@@ -317,6 +337,29 @@ body,
     }
 }
 
+@media (max-width: 600px) {
+    .wp-block-media-text.is-stacked-on-mobile .wp-block-media-text__media {
+        -ms-grid-column: 1;
+        grid-column: 1;
+        grid-column-start: 1;
+        grid-column-end: auto;
+        -ms-grid-row: 3;
+        grid-row: 3;
+        grid-row-start: 3;
+        grid-row-end: auto;
+    }
+
+    .page-id-32 .cover-header-inner {
+        width: 30rem;
+    }
+
+    .site-logo img {
+        max-height: 3.6rem;
+        padding-top: 2px;
+    }
+
+}
+
 
 @media (min-width: 700px) {
     .singular .entry-header {
@@ -337,6 +380,19 @@ body,
     h1,
     .heading-size-1 {
         font-size: 6rem;
+    }
+}
+
+/* Til ipad i landskab og portrat størrelse da parallax effekten ikke virkede men blev til et meget grumset billed fordi den zoomede så meget ind */
+@media only screen and (min-device-width : 768px) and (max-device-width : 1024px) {
+
+    .wp-block-cover.has-parallax,
+    .wp-block-cover-image.has-parallax,
+    .cover-header {
+        background-attachment: scroll !important;
+        background-size: cover;
+        height: 100%;
+        overflow: hidden;
     }
 }
 
