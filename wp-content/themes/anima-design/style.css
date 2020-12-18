@@ -141,6 +141,13 @@ hr {
     display: none;
 }
 
+/* splash billed på kan du hjælpe */
+.page-id-64 .bg-image {
+    background-position: right;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
 
 /* FORSIDE ----------------------------- */
 
@@ -177,6 +184,7 @@ hr {
     margin: 0;
 }
 
+/* støt knap i bund af sider */
 #wp-block-themeisle-blocks-button-2ad1ad9b .wp-block-button__link,
 #wp-block-themeisle-blocks-button-a7e2a4dc .wp-block-button__link,
 #wp-block-themeisle-blocks-button-fe6e4ea8 .wp-block-button__link,
@@ -250,13 +258,15 @@ body,
     text-transform: uppercase;
 }
 
-.menu-item-74 {
+.menu-item-74,
+.menu-item-1170 {
     background-color: #e73333;
     padding: 1.5rem 5rem;
     text-transform: uppercase;
 }
 
-.menu-item-74:hover {
+.menu-item-74:hover,
+.menu-item-1170:hover {
     border: 3px solid #e73333;
     text-decoration: none;
 }
@@ -266,7 +276,7 @@ body,
     color: white;
 }
 
-.menu-modal-inner .menu-item-74 {
+.menu-modal-inner .menu-item-1170 {
     text-align: center;
 }
 
@@ -335,6 +345,7 @@ body,
     .heading-size-1 {
         font-size: 5rem;
     }
+
 }
 
 @media (max-width: 600px) {
@@ -391,7 +402,6 @@ body,
     .cover-header {
         background-attachment: scroll !important;
         background-size: cover;
-        height: 100%;
         overflow: hidden;
     }
 }
